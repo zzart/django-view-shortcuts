@@ -1,0 +1,10 @@
+<h1>{{ object.title }}</h1>
+
+<dl>
+    <dt>Author</dt>
+        <dd>{{ object.author }}</dd>
+    <dt>Categories</dt>
+        <dd>{{ object.category.all }}</dd>
+</dl>
+
+{{ object.text }}

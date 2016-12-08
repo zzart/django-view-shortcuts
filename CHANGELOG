@@ -1,0 +1,33 @@
+Changelog before extracting to separate repository:
+
+changeset:   48:8b03c5ad258d
+user:        Andy Mikhailenko <neithere@gmail.com>
+date:        Thu Oct 30 06:49:04 2008 +0500
+summary:     custom_shortcuts: Add view_pagination module
+
+changeset:   46:765dce4a1156
+user:        Andy Mikhailenko <neithere@gmail.com>
+date:        Thu Oct 30 06:46:02 2008 +0500
+summary:     custom_shortcuts: Add filter_date_range()
+
+changeset:   45:888fb27fec87
+parent:      31:d184e571fb0c
+user:        Andy Mikhailenko <neithere@gmail.com>
+date:        Mon Oct 13 19:05:38 2008 +0600
+summary:     Add custom_shortcuts.view_filters
+
+changeset:   40:cd8170d95832
+user:        Andy Mikhailenko <neithere@gmail.com>
+date:        Thu Oct 16 03:14:56 2008 +0600
+summary:     custom_shortcuts: Add view_filters.filter_date_range
+
+changeset:   39:d0d507eca47e
+user:        Andy Mikhailenko <neithere@gmail.com>
+date:        Thu Oct 16 01:34:23 2008 +0600
+summary:     custom_shortcuts: Fix bug in view_filters.filter_date: month was required, this is not always correct
+
+changeset:   38:3ec191dc5cc9
+user:        Andy Mikhailenko <neithere@gmail.com>
+date:        Thu Oct 16 01:17:20 2008 +0600
+summary:     Add custom_shortcuts.view_filters
+ 

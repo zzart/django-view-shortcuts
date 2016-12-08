@@ -1,0 +1,25 @@
+Why view_shortcuts.filters, not django.contrib.admin.filterspecs?
+
+- ordinary views, not only admin
+- lookups mapped to params --> security
+- no pre-generated html --> valid, flexible
+- QuerySet in, QuerySet out: can pre- and post-filter
+- choices with respect to existing QuerySet
+
+What's good in filterspecs (included here now, too):
+
+- factory with simple tests
+  - enables field-specific behaviour
+  - easily extendable with custom filterspecs
+
+TODO:
+
+- more filters:
+  - alphabetic
+  - date drilldown
+  - date fadeout
+  - range selection
+- add ability to enforce a filter when creating a FilterList
+  (e.g. date drilldown/fadeout have to pass the same test and, therefore,
+  the one which is declared earlier will be chosen automatically; this makes
+  no sense and developer should be able to choose the field manually.)

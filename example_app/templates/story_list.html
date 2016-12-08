@@ -1,0 +1,31 @@
+<h1>Object List</h1>
+
+<div style="background: #eee;">
+    <h2>Filters</h2>
+    <dl>
+    {% for filter in filters %}
+        <dt>{{ filter.title }}</dt>
+        {% for choice in filter.choices %}
+            {% if choice.active %}
+                <dd>{{ choice.title }}</dd>
+            {% else %}
+                {% if choice.items_count %}
+                <dd><a href="?{{ choice.urlencode }}">{{ choice.title }}</a> ({{ choice.items_count }})
+                </dd>
+                {% endif %}
+            {% endif %}
+        {% endfor %}
+    {% endfor %}
+    </dl>
+    {% if filters.active %}
+        <p><a href="?">Show all</a></p>
+    {% endif %}
+</div>
+
+<h2>Results</h2>
+
+<ul>
+{% for object in filters.object_list %}
+    <li><a href="{{ object.get_url }}">{{ object }}</a></li>
+{% endfor %}
+</ul>
